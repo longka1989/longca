@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transparent login form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        body::before{
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("img/galaxy-background.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+            filter: blur(2px);
+        }
+        .contact-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 500px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.5);
+            border-radius: 15px;
+        }
+        .avatar {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-150px/2);
+            left: calc(50% - 75px);
+        }
+        .contact-form h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .contact-form p
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        .contact-form input
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .contact-form input[type="submit"] {
+            height: 30px;
+            color: #fff;
+            font-size: 15px;
+            background: red;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            margin-top: 15%;
+        }
+        .contact-form input[type="submit"]:hover {
+            color:aqua
+
+        }
+       
+        input[type="checkbox"] {
+            width: 20%;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <img src="img/avatar.png" class="avatar">
+        <h2>Contact Form</h2>
+        <form action="result.html" method="GET">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Enter Email" required>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" required> 
+            <input type="submit" name="submit" value="Sign In">
+            <p><input type="checkbox"> Remember Me</p>
+        </form>
+    </div>
+</body>
+</html>
