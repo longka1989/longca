@@ -1,0 +1,85 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+     <head>
+      <meta charset="utf-8"/>
+      <title>Long Ca's Blog</title>
+      <meta name="description" content="HTML Form"/>
+      <meta name="author" content="LongCa" />
+      <meta name="keyword" content="học HTML Form"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link type="text/css" rel="stylesheet" href="style.css"/>
+     </head>
+     <body>
+            <div class="wrap">
+                <form action="result.html" method="GET" enctype="multipart/form-data">
+                    <h2>Customer Info</h2>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="User Name" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="tel">Tel:</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div>
+                        <label for="date">Birthdate:</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <span><input type="radio" name="gender" id="male" value="male">Male</span>
+                        <span><input type="radio" name="gender" id="female" value="female">Female</span>
+                    </div>
+                    <div>
+                        <label for="file">Upload Image:</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+                        <h2>Service Enquiry </h2>
+                    <div>
+                        <label for="product">Product:</label>
+                        <span><input type="checkbox" name="applewatch" id="applewatch" value="applewatch">Apple Watch</span>
+                        <span><input type="checkbox" name="samsungwatch" id="samsungwatch" value="samsungwatch">Samsung Watch</span>
+                    </div>
+                    <div>
+                        <label for="withstrap" name=>With Strap:</label>
+                        <input type="radio" name="strap" id="withstrap" value="withstrap">
+                    </div>
+                    <div>
+                        <label for="withoutstrap" name=>Without Strap:</label>
+                        <input type="radio" name="strap" id="withoutstrap" value="withoutstrap">
+                    </div>
+                    <div>
+                        <label for="strap">Strap:</label>
+                        <select name="strapmateriral" id="strapmaterial">
+                            <option disable="disabled" selected="selected">--Choose Option</option>
+                            <option value="Steel Bracelet">Steel Bracelet</option>
+                            <option value="Leather">Leather</option>
+                            <option value="Fabric">Fabric</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="strapcolor">Strap Color:</label>
+                        <input type="color" name="strapcolor" id="strapcolor">
+                    </div>
+                    <div>
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" disabled></textarea>
+                    </div>
+                     <div class="btn">
+                        <input type="submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                        <a href="result.html" target="_blank">Next</a>
+                     </div>
+                    
+                </form>
+            </div>
+     </body>
+    </html>
