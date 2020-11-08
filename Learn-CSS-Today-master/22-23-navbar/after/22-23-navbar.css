@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: url(img/iphone-12-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  
+
+
+nav {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 0.5em;
+}
+
+.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+
+
+}
+
+.menu ul li {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  transition: .5s;
+
+}
+
+
+.menu ul li:hover {
+  background-color: #777;
+ 
+}
+
+.menu ul li a {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+ul.submenu {
+  position: absolute;
+  list-style: none;
+  display: none;
+  background-color: #333;
+}
+
+
+.menu ul li:hover .submenu {
+  display: block;
+}
